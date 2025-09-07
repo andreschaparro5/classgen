@@ -50,10 +50,6 @@ void Presenter::start(){
 		atributes.push_back(line);
 	}
 	
-	for(string value : atributes){
-		View::colorTerm(value, "blue");
-	}
-	
 	// Creando la clase
 	data += "public class " + name_class + "{\n";
 	
@@ -130,6 +126,6 @@ void Presenter::start(){
 	
 	FileManagement fm(name_class + ".java");
 	fm.writeFile(data);
-	View::colorTerm("Archivo creado con exito!!", "blue");
+	View::colorTerm("\n¡¡Clase creada con exito!!", "blue");
 }
 
