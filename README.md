@@ -1,22 +1,27 @@
 # ClassGen
-ClassGen is a Java class generator under GPL v3.
+ClassGen is a Java class generator.
 
 > Author: Andrés Chaparro
 
 ## How to compile?
-Make sure you have installed: gcc, make and cmake in your operative system.
+Make sure you have installed: gcc (or clang), make and cmake in your operative system.
 And then run:
 
+
 ```
-cmake .
+mkdir build && cd build
+```
+
+```
+cmake ..
 ```
 
 ```
 make
 ```
 
-An executable is generated in dist/. You can run the program with:
+An executable is generated in build/. You can run the program with:
 
 ```
-./dist/classgen
+./classgen
 ```
