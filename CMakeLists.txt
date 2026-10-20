@@ -23,18 +23,18 @@ project(classgen)
 set(CMAKE_CXX_STANDARD 17)
 
 # Ruta de destino del ejecutable
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/dist)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build)
 
 # Nombre del ejecutable y clases
 add_executable(classgen # nombre del ejecutable
-	main.cpp
-	logic/FileManagement.cpp
-	view/View.cpp
-	presenter/Presenter.cpp
+	src/main.cpp
+	src/logic/FileManagement.cpp
+	src/view/View.cpp
+	src/presenter/Presenter.cpp
 )
 
 # Directorios
-include_directories(logic presenter view model)
+include_directories(src src/logic src/presenter src/view src/model)
 
 
 
